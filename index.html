@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>The Spark Foundation Donation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img class="logo" src="logo.png" alt="logo" width="75" height="75">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Spark Donation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Spark Donation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Get an Spark Donation Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row my-4">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <div class="col ">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="cinputPassword3" class="col-sm-2 col-form-label">Confrim Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img1.jpg" class="d-block w-100" width="1200" height="500" alt="img1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:white;">DONATE TO HELP</h2>
+                    <p style="color:white; font-size:160%;">Every charitable act make difference.</p>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#DonateModal">DONATE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img2.jpg" class="d-block w-100" width="1200" height="500" alt="img2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:white;">DONATE TO EDUCATE</h2>
+                    <p style="color:white; font-size:160%;">To educate a child is to turn walls into doors</p>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#DonateModal">DONATE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img3.jpg" class="d-block w-100" width="1200" height="500" alt="img3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:black;">DONATE TO GET BLESSINGS</h2>
+                    <p style="color:black; font-size:160%;">You have two hands. One to help yourself, the second to help
+                        others</p>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#DonateModal"
+                        onclick="window.location.href = '//https://rzp.io/l/XTtn2J5jqv';">DONATE</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="container marketing my-4 mx-100">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="MT.png"
+                        alt="Mother Teresa">
+
+                    <h2>Mother Teresa</h2>
+                    <h5><span class="text-muted">Saint</span></h5>
+                    <p style="font-family:cursive;">"It's not how much we give but how much love we put into giving."
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="AK.jpg"
+                        alt="Akashay Kumar">
+
+                    <h2>Akshay Kumar</h2>
+                    <h5><span class="text-muted">Indian-Canadian Actor</span></h5>
+                    <p style="font-family:cursive;">"Yes I make charities but it isn't a big deal, it's my responsibilty
+                        towards society."</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="OW1.jpg"
+                        alt="Oprah Winfrey">
+
+                    <h2>Oprah Winfrey</h2>
+                    <h5><span class="text-muted">American host</span></h5>
+                    <p style="font-family:cursive;">"I don't think you ever stop giving. I really don't. I think it's an
+                        on-going process. And it's not just about being able to write a check. It's being able to touch
+                        somebody's life."</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="MA.jpg"
+                        alt="Maya Angelou">
+
+                    <h2>Maya Angelou</h2>
+                    <h5><span class="text-muted">Poet</span></h5>
+                    <p style="font-family:cursive;">"I have found that among it's other benefits, Charity liberates the soul of the givers."
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="CH.jpg"
+                        alt="Conrad Hilton">
+
+                    <h2>Conrad Hilton</h2>
+                    <h5><span class="text-muted">American businessman</span></h5>
+                    <p style="font-family:cursive;">"Charity is a supreme virtue, and the great channel, through which the mercy of God is passed onto mankind."</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="180" height="200" src="RT.jpg"
+                        alt="Rabindranath Tagore">
+
+                    <h2>Rabindranath Tagore</h2>
+                    <h5><span class="text-muted">Poet</span></h5>
+                    <p style="font-family:cursive;">“I slept and dreamt that life was joy. I awoke and saw that life was service. I acted and behold, service was joy.”</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+        </div>
+    </div>
+
+    <!-- Donate Modal -->
+    <div class="modal fade" id="DonateModal" tabindex="-1" aria-labelledby="DonateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DonateModalLabel">Donate to Spark Donation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://rzp.io/l/XTtn2J5jqv">
+                        <div class="row my-4">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <div class="col ">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="row mb-3 my-4">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="phone" class="col-sm-2 col form-label">Phone Number</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Donate Now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2019–2022 The Spark Foundation. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
